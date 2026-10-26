@@ -1,0 +1,17 @@
+{
+  "name": "http-transfer-encoding-chunked-decode",
+  "version": "0.1.0",
+  "description": "Converts HTTP chunked transfer-encoded response bodies into their original bytes",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
