@@ -1,6 +1,6 @@
 {
   "name": "http-transfer-encoding-chunked-decode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Converts HTTP chunked transfer-encoded response bodies into their original bytes",
   "type": "module",
   "main": "src/index.js",
