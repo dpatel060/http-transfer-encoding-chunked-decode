@@ -25,3 +25,10 @@ The trade-off: `decodeChunked` is synchronous and expects the full chunked body 
 - Hex sizes may be uppercase or lowercase; both are accepted.
 
 The single exported name is `decodeChunked`. It takes a `Uint8Array` and returns a `Uint8Array`.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
